@@ -1,0 +1,189 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36">
+  <diagram name="Page-1" id="sfF1qDln4W7bUArz47wH">
+    <mxGraphModel dx="1426" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="f8muBNo29DSHEIifPNV3-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="440" width="280" x="80" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-15" edge="1" parent="1" source="f8muBNo29DSHEIifPNV3-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="f8muBNo29DSHEIifPNV3-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="[&amp;nbsp; START&amp;nbsp; ]&lt;br&gt;Power On / Firmware Boot" vertex="1">
+          <mxGeometry height="80" width="120" x="160" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-14" edge="1" parent="1" source="f8muBNo29DSHEIifPNV3-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="f8muBNo29DSHEIifPNV3-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Initialize Peripherals&lt;div&gt;(Configure Registers, Port Access, ADC Prescalers, Hardware UART at 115200 baud)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="250" x="95" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Set handshake_state = UNCONNECTED" vertex="1">
+          <mxGeometry height="40" width="240" x="100" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="440" width="280" x="400" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-16" edge="1" parent="1" source="f8muBNo29DSHEIifPNV3-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="f8muBNo29DSHEIifPNV3-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Send Handshake Token:&lt;br&gt;SYN (&quot;SYN\n&quot;) over Serial" vertex="1">
+          <mxGeometry height="35" width="160" x="460" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1. Hardware &amp;amp; Environment Initialization&lt;div&gt;Caramon MCU STM32U585&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="220" x="110" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="2. Handshake Sequence&lt;br&gt;Caramon SAT MCU &amp;lt;-&amp;gt; Raistlin SAT MPU" vertex="1">
+          <mxGeometry height="30" width="240" x="420" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-17" edge="1" parent="1" source="f8muBNo29DSHEIifPNV3-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="f8muBNo29DSHEIifPNV3-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-27" connectable="0" parent="f8muBNo29DSHEIifPNV3-17" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-0.219" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-23" edge="1" parent="1" source="f8muBNo29DSHEIifPNV3-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="f8muBNo29DSHEIifPNV3-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-25" connectable="0" parent="f8muBNo29DSHEIifPNV3-23" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="0.035" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-24" edge="1" parent="1" source="f8muBNo29DSHEIifPNV3-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="f8muBNo29DSHEIifPNV3-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-26" connectable="0" parent="f8muBNo29DSHEIifPNV3-24" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Timeout" vertex="1">
+          <mxGeometry relative="1" x="0.0237" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-10" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Received&lt;br&gt;SAK (&quot;SAK\n&quot;)&lt;br&gt;from Raistlin?" vertex="1">
+          <mxGeometry height="115" width="160" x="460" y="207.5" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-18" edge="1" parent="1" source="f8muBNo29DSHEIifPNV3-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="f8muBNo29DSHEIifPNV3-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Send ACK (&quot;ACK\n&quot;)&lt;br&gt;over Serial" vertex="1">
+          <mxGeometry height="35" width="160" x="460" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Set handshake_state = CONNECTED" vertex="1">
+          <mxGeometry height="40" width="240" x="420" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="440" width="320" x="720" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="3. Main Execution Loop&lt;br&gt;Data Acquisition | Packaging | Transmission" vertex="1">
+          <mxGeometry height="30" width="280" x="740" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-33" edge="1" parent="1" source="f8muBNo29DSHEIifPNV3-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="f8muBNo29DSHEIifPNV3-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Poll ADC Channels via Hardware Registers" vertex="1">
+          <mxGeometry height="40" width="240" x="760" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-34" edge="1" parent="1" source="f8muBNo29DSHEIifPNV3-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="f8muBNo29DSHEIifPNV3-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Package values into raw sensor frame" vertex="1">
+          <mxGeometry height="40" width="240" x="760" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-37" edge="1" parent="1" source="f8muBNo29DSHEIifPNV3-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="f8muBNo29DSHEIifPNV3-28">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1020" y="398" />
+              <mxPoint x="1020" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-30" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="Serialize and transmit raw sensor&lt;br&gt;frame over UART&amp;nbsp;" vertex="1">
+          <mxGeometry height="83.75" width="223.33" x="769" y="356.25" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-31" edge="1" parent="1" source="f8muBNo29DSHEIifPNV3-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="f8muBNo29DSHEIifPNV3-28">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="470" />
+              <mxPoint x="700" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-35" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;Node 1: Caramon | SAT MCU | Sensor Data Acquisition&lt;/font&gt;" vertex="1">
+          <mxGeometry width="950" x="80" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-53" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="Arduino UNO Q STM32U585 | 10-bit ADC&lt;div&gt;768 KB RAM | 2 MB Flash&lt;/div&gt;&lt;div&gt;Word Size: 4 Bytes&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;Analog Channels: A0-A3 (4 channels)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Internal UART Bridge&lt;/div&gt;&lt;div&gt;Byte Order: Little Endian (Host)&lt;/div&gt;&lt;div&gt;Firmware IDE: Arduino IDE C++&lt;/div&gt;&lt;div&gt;OS: Zephyr RTOS&lt;/div&gt;&lt;div&gt;Timeout: 1000ms&lt;br&gt;Strategy: Setup threads to either poll sensors at a determined rate via hardware timer&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;Notes: Sync Word=0xAA55&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="190" width="280" x="70" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-54" edge="1" parent="1" source="f8muBNo29DSHEIifPNV3-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1080" y="810.1379310344828" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-55" connectable="0" parent="f8muBNo29DSHEIifPNV3-54" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="To Node 2: Raistlin" vertex="1">
+          <mxGeometry relative="1" x="-0.1068" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-56" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;Physical UART Link&lt;br&gt;115200/8/n/1&lt;br&gt;via Serial-To-USBA&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="120" x="840" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-57" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="sync_word" vertex="1">
+          <mxGeometry height="20" width="80" x="685" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-58" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="photo_l" vertex="1">
+          <mxGeometry height="20" width="80" x="765" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-59" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="photo_r" vertex="1">
+          <mxGeometry height="20" width="80" x="845" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-60" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="temp" vertex="1">
+          <mxGeometry height="20" width="80" x="925" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-61" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="softpot" vertex="1">
+          <mxGeometry height="20" width="80" x="1005" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-62" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;Header&lt;/font&gt;" vertex="1">
+          <mxGeometry height="20" width="40" x="705" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-63" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;Ch0&lt;/font&gt;" vertex="1">
+          <mxGeometry height="20" width="40" x="785" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-64" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;Ch1&lt;/font&gt;" vertex="1">
+          <mxGeometry height="20" width="40" x="865" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-65" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;Ch2&lt;/font&gt;" vertex="1">
+          <mxGeometry height="20" width="40" x="945" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-66" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;Ch3&lt;/font&gt;" vertex="1">
+          <mxGeometry height="20" width="40" x="1025" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-67" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="ADC Channels (A0-A4)&lt;br&gt;&lt;br&gt;Ch0: Left Photoresistor&lt;div&gt;Ch1: Right Photoresistor&lt;/div&gt;&lt;div&gt;Ch2: Temperature Sensor&lt;/div&gt;&lt;div&gt;Ch3: SoftPot Membrane Potentiometer&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="220" x="797.5" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-68" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;10 bytes&lt;/font&gt;" vertex="1">
+          <mxGeometry height="20" width="55" x="630" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-69" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;2 bytes&lt;/font&gt;" vertex="1">
+          <mxGeometry height="20" width="55" x="697.5" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-70" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;2 bytes&lt;/font&gt;" vertex="1">
+          <mxGeometry height="20" width="55" x="777.5" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-71" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;2 bytes&lt;/font&gt;" vertex="1">
+          <mxGeometry height="20" width="55" x="857.5" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-72" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;2 bytes&lt;/font&gt;" vertex="1">
+          <mxGeometry height="20" width="55" x="937" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-73" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;2 bytes&lt;/font&gt;" vertex="1">
+          <mxGeometry height="20" width="55" x="1017.5" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="f8muBNo29DSHEIifPNV3-74" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Raw Sensor Frame" vertex="1">
+          <mxGeometry height="30" width="110" x="815" y="520" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
