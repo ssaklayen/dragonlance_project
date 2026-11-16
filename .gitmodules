@@ -1,0 +1,18 @@
+[submodule "node-contracts"]
+	path = node-contracts
+	url = git@github.com:ssaklayen/node-contracts.git
+[submodule "node1-caramon"]
+	path = node1-caramon
+	url = git@github.com:ssaklayen/node1-caramon.git
+[submodule "node2-raistlin"]
+	path = node2-raistlin
+	url = git@github.com:ssaklayen/node2-raistlin.git
+[submodule "node3-tanis"]
+	path = node3-tanis
+	url = git@github.com:ssaklayen/node3-tanis.git
+[submodule "node4-tasslehoff"]
+	path = node4-tasslehoff
+	url = git@github.com:ssaklayen/node4-tasslehoff.git
+[submodule "node5-sturm"]
+	path = node5-sturm
+	url = git@github.com:ssaklayen/node5-sturm.git
