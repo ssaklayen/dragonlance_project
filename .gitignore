@@ -35,6 +35,7 @@
 *.i*86
 *.x86_64
 *.hex
+*.bin
 
 # Debug files
 *.dSYM/
@@ -56,3 +57,15 @@ dkms.conf
 
 # other/custom
 .history/
+.vscode/
+.DS_Store
+build/
+CMakeCache.txt
+CMakeFiles/
+.config
+Debug/
+Release/
+node_modules/
+.env
+dist/
+npm-debug.log
